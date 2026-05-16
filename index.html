@@ -1,0 +1,648 @@
+  <!DOCTYPE html>
+
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Spanish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌟 Easy Spanish</h1>
+      <p>Вивчай іспанську легко та цікаво разом з нами</p>
+    </header>
+
+    <div class="casino-ads">
+      <h3>🎰 LUCKY CASINO 🎰</h3>
+      <p><strong>WIN BIG NOW!</strong> Play our amazing slots and card games!</p>
+      <p>💰 100% Bonus on First Deposit 💰</p>
+      <p>🏆 Jackpot: $1,000,000 🏆</p>
+      <button class="casino-btn" onclick="openCasinoModal()">PLAY NOW!</button>
+
+      <p style="font-size: 10px; margin-top: 10px;">*Must be 18+ | Gamble Responsibly</p>
+    </div>
+
+    <div class="tabs-container">
+      <button class="tab-btn active" onclick="openTab('home')">Головна</button>
+      <button class="tab-btn" onclick="openTab('reading')">Читання</button>
+      <button class="tab-btn" onclick="openTab('dialogs')">Діалоги</button>
+      <button class="tab-btn" onclick="openTab('vocabulary')">Словник</button>
+      <button class="tab-btn" onclick="openTab('grammar')">Граматика</button>
+      <button class="tab-btn" onclick="openTab('resources')">Матеріали</button>
+    </div>
+
+    <div id="home" class="tab-content active">
+      <div class="main-intro">
+        <h2>Привіт!</h2>
+        <p>Ми допоможемо тобі легко та цікаво вивчити іспанську мову. Тут кожен знайде щось корисне для себе. На вас чекають основні фрази та слова, граматика, діалоги та тренувальні вправи.</p>
+      </div>
+      
+
+      
+      <h2>Що ти знайдеш на сайті?</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>📚 Правила читання</h4>
+          <p>Навчи основи вимови іспанської мови та зрозумій, як читаються букви та звукосполучення.</p>
+
+        </div>
+        <div class="card">
+          <h4>💬 Діалоги</h4>
+          <p>Практичні діалоги для повсякденних ситуацій: знайомство, ресторан, запит дороги та багато іншого.</p>
+
+        </div>
+        <div class="card">
+          <h4>📖 Словник</h4>
+          <p>Корисний словник з основними словами та виразами, організованими за темами.</p>
+        </div>
+        <div class="card">
+          <h4>🎓 Граматика</h4>
+          <p>Детальні поясненнями граматичних правил іспанської мови з прикладами.</p>
+        </div>
+        <div class="card">
+          <h4>🎬 Ресурси</h4>
+          <p>Рекомендовані книги, підручники та YouTube-канали для навчання.</p>
+        </div>
+        <div class="card">
+          <h4>🌐 Живе спілкування</h4>
+          <p>Поради для того, як вчити іспанську кожен день та спілкуватися з іноземцями.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="reading" class="tab-content">
+      <h2>Правила читання</h2>
+
+      
+      <p>Іспанська мова надзвичайно логічна: майже кожна літера відповідає одному конкретному звуку, що дозволяє навчитися читати вже за перші 15 хвилин.</p>
+      
+      <h3>Голосні (a, e, i, o, u)</h3>
+      <p>Вони завжди вимовляються чітко, коротко і не змінюють свого звучання, навіть якщо вони ненаголошені. Наприклад, літера O ніколи не перетворюється на [а], а літера E завжди звучить як тверде [е].</p>
+      
+      <h3>Приголосні</h3>
+      <p>Щодо приголосних, важливо запам'ятати кілька особливостей:</p>
+      <ul>
+        <li><strong>H</strong> — завжди залишається німою і ніколи не вимовляється</li>
+        <li><strong>J</strong> — це завжди горловий звук [х]</li>
+        <li><strong>C та G</strong> — мають подвійну природу: вони звучать твердо як [к] та [г] перед голосними a, o, u, але стають м'якими перед e та i</li>
+        <li><strong>C перед e/i</strong> — читається як міжзубний [θ] (схоже на англійське "th") або звичайне [с]</li>
+        <li><strong>G перед e/i</strong> — перетворюється на звук [х]</li>
+      </ul>
+
+      <h3>Сполучення букв</h3>
+      <p>Специфічні іспанські сполучення літер також мають свої правила:</p>
+      <ul>
+        <li><strong>LL</strong> — читається як м'який звук [й]</li>
+        <li><strong>CH</strong> — дає звук [ч]</li>
+        <li><strong>Ñ</strong> — завжди звучить як [нь]</li>
+        <li><strong>QU</strong> — літера u в ньому не читається, група вимовляється як [к]</li>
+      </ul>
+
+      <h3>Наголоси</h3>
+      <p>Наголос підпорядковується двом основним законам:</p>
+      <ul>
+        <li>Якщо слово закінчується на голосну або на літери N чи S, наголошуйте передостанній склад</li>
+        <li>Якщо слово закінчується на будь-яку іншу приголосну, наголос автоматично падає на останній склад</li>
+        <li>Графічна позначка (accento) з'являється коли наголос не відповідає цим правилам</li>
+      </ul>
+    </div>
+
+    <div id="dialogs" class="tab-content">
+      <h2>Діалоги для практики</h2>
+
+
+      <div class="dialog-box">
+        <h3>1. Знайомство (Presentación)</h3>
+        <p>Тут ви бачите відмінювання дієслів та базові вітання.</p>
+        <p><strong>— ¡Hola! ¿Cómo estás?</strong> (Привіт! Як справи?)</p>
+        <p><strong>— Hola, estoy muy bien, ¿y tú?</strong> (Привіт, у мене все дуже добре, а у тебе?)</p>
+        <p><strong>— Bien, gracias. ¿Cómo te llamas?</strong> (Добре, дякую. Як тебе звати?)</p>
+        <p><strong>— Me llamo Juan. Soy de España. ¿De dónde eres tú?</strong> (Мене звати Хуан. Я з Іспанії. А звідки ти?)</p>
+        <p><strong>— Soy de Ucrania. Mucho gusto.</strong> (Я з України. Дуже приємно.)</p>
+        <p><strong>— El gusto es mío.</strong> (Мені теж.)</p>
+      </div>
+
+      <div class="dialog-box">
+        <h3>2. У ресторані (En el restaurante)</h3>
+        <p>Тут працюють артиклі та ввічливі форми замовлення.</p>
+        <p><strong>— ¡Buenas tardes! Una mesa para dos, por favor.</strong> (Доброго дня! Стіл на двох, будь ласка.)</p>
+        <p><strong>— Claro. Aquí tienen la carta.</strong> (Звісно. Ось вам меню.)</p>
+        <p><strong>— Gracias. Yo quiero un pollo con patatas y una ensalada.</strong> (Дякую. Я хочу курку з картоплею та салат.)</p>
+        <p><strong>— ¿Y para beber?</strong> (А пити що будете?)</p>
+        <p><strong>— Agua mineral fría, por favor.</strong> (Мінеральну воду холодну, будь ласка.)</p>
+        <p><strong>— Muy bien. ¿Algo más?</strong> (Дуже добре. Щось ще?)</p>
+        <p><strong>— No, nada más. La cuenta, por favor.</strong> (Ні, більше нічого. Рахунок, будь ласка.)</p>
+      </div>
+
+      <div class="dialog-box">
+        <h3>3. Пошук дороги (Buscando el camino)</h3>
+        <p>Демонстрація дієслова estar (місцезнаходження) та прийменників.</p>
+        <p><strong>— Perdón, ¿está la estación de tren cerca de aquí?</strong> (Вибачте, залізничний вокзал тут поруч?)</p>
+        <p><strong>— Sí, está muy cerca.</strong> (Так, він дуже близько.)</p>
+        <p><strong>— ¿Cómo puedo llegar?</strong> (Як я можу дістатися?)</p>
+        <p><strong>— Siga recto y gire a la derecha en la próxima calle.</strong> (Йдіть прямо і поверніть праворуч на наступній вулиці.)</p>
+        <p><strong>— ¿Hay un banco por allí?</strong> (Там є банк?)</p>
+        <p><strong>— No, no hay bancos, pero hay un supermercado grande.</strong> (Ні, банків немає, але є великий супермаркет.)</p>
+        <p><strong>— Muchas gracias por la ayuda.</strong> (Дуже дякую за допомогу.)</p>
+        <p><strong>— De nada. ¡Buen viaje!</strong> (Нема за що. Гарної подорожі!)</p>
+      </div>
+    </div>
+
+    <div id="vocabulary" class="tab-content">
+      <h2>Словник</h2>
+
+      
+      <div class="grid">
+        <div class="card">
+          <h4>🥩 Мясо та риба</h4>
+          <ul>
+            <li>Pollo — Курка</li>
+            <li>Carne de vaca — Яловичина</li>
+            <li>Cerdo — Свинина</li>
+            <li>Jamón — Шинка</li>
+            <li>Pescado — Риба</li>
+            <li>Salmón — Лосось</li>
+            <li>Marisco — Морепродукти</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>🥛 Молочні продукти</h4>
+          <ul>
+            <li>Leche — Молоко</li>
+            <li>Queso — Сир</li>
+            <li>Mantequilla — Вершкове масло</li>
+            <li>Yogur — Йогурт</li>
+            <li>Huevos — Яйця</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>🥕 Овочі та фрукти</h4>
+          <ul>
+            <li>Patata / Papa — Картопля</li>
+            <li>Tomate — Помідор</li>
+            <li>Cebolla — Цибуля</li>
+            <li>Zanahoria — Морква</li>
+            <li>Manzana — Яблуко</li>
+            <li>Plátano — Банан</li>
+            <li>Naranja — Апельсин</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>☕ Напитки</h4>
+          <ul>
+            <li>Agua — Вода</li>
+            <li>Café — Кава</li>
+            <li>Leche — Молоко</li>
+            <li>Vino — Вино</li>
+            <li>Cerveza — Пиво</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>🎨 Кольори</h4>
+          <ul>
+            <li>Rojo — Червоний</li>
+            <li>Azul — Синій</li>
+            <li>Amarillo — Жовтий</li>
+            <li>Verde — Зелений</li>
+            <li>Negro — Чорний</li>
+            <li>Blanco — Білий</li>
+            <li>Rosa — Рожевий</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>💳 Покупки</h4>
+          <ul>
+            <li>¿Cuánto vale? — Скільки?</li>
+            <li>La lista — Список покупок</li>
+            <li>¿Dónde está...? — Де знаходиться?</li>
+            <li>Pagar — Платити</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="grammar" class="tab-content">
+      <h2>Граматика та особливості мови</h2>
+
+
+      <h3>1. Рід іменників</h3>
+      <p>В іспанській мові кожне слово має рід. Якщо ви помилитесь з родом, вас зрозуміють, але артиклі та прикметники теж зміняться.</p>
+      <ul>
+        <li><strong>Чоловічий рід (Masculino):</strong> Закінчуються на -o, -or, -aje, -ma. Приклади: El perro (пес), el ordenador (комп'ютер), el problema (проблема)</li>
+        <li><strong>Жіночий рід (Femenino):</strong> Закінчуються на -a, -ción, -dad, -tad. Приклади: La casa (будинок), la canción (пісня), la felicidad (щастя)</li>
+      </ul>
+
+      <h3>2. Артиклі</h3>
+      <table>
+        <tr>
+          <th>Тип</th>
+          <th>Чоловічий</th>
+          <th>Жіночий</th>
+          <th>Коли вживаємо</th>
+        </tr>
+        <tr>
+          <td><strong>Визначені</strong></td>
+          <td>El / Los</td>
+          <td>La / Las</td>
+          <td>Конкретна річ або вже згадували</td>
+        </tr>
+        <tr>
+          <td><strong>Невизначені</strong></td>
+          <td>Un / Unos</td>
+          <td>Una / Unas</td>
+          <td>Перша згадка або одна з багатьох</td>
+        </tr>
+      </table>
+      <p><strong>Приклад:</strong> Quiero un libro (Хочу якусь книгу). Quiero el libro rojo (Хочу саме ту червону).</p>
+
+      <h3>3. Дієслова</h3>
+      <p><strong>Три дієвідміни в теперішньому часі (Presente):</strong></p>
+      <ul>
+        <li><strong>-AR (Hablar — говорити):</strong> Yo habl-o, Tú habl-as, Él habl-a, Nosotros habl-amos, Vosotros habl-áis, Ellos habl-an</li>
+        <li><strong>-ER (Comer — їсти):</strong> -o, -es, -e, -emos, -éis, -en</li>
+        <li><strong>-IR (Vivir — жити):</strong> -o, -es, -e, -imos, -ís, -en</li>
+      </ul>
+
+      <h3>4. SER vs ESTAR</h3>
+      <ul>
+        <li><strong>SER (бути назавжди):</strong> Ідентифікація, національність, професія. Приклад: Soy profesor (Я вчитель)</li>
+        <li><strong>ESTAR (бути тимчасово):</strong> Настрій, здоров'я, місцезнаходження. Приклад: Estoy cansado (Я втомлений)</li>
+      </ul>
+
+      <h3>5. Порядок слів</h3>
+      <ul>
+        <li><strong>Заперечення:</strong> No завжди перед дієсловом. Yo no quiero (Я не хочу)</li>
+        <li><strong>Прикметники:</strong> Після іменника. La flor blanca (Квітка біла)</li>
+        <li><strong>Питання:</strong> На письмі ¿ на початку. ¿Tienes dinero? (Маєш гроші?)</li>
+      </ul>
+
+      <h3>6. Займенники</h3>
+      <p>В іспанській займенники Yo, Tú тощо зазвичай опускаються. Закінчення дієслова саме скаже, про кого йдеться. Замість "Yo vivo" кажуть просто "Vivo".</p>
+
+      <h3>7. Прийменник A перед людьми</h3>
+      <p>Якщо дія спрямована на конкретну людину чи тварину, ставиться прийменник A. Veo a Juan (Я бачу Хуана). Veo el coche (Я бачу машину — без A).</p>
+    </div>
+
+    <div id="resources" class="tab-content">
+      <h2>Корисні матеріали для навчання</h2>
+
+
+      <h3>Книги та підручники</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>📚 Gramática de uso del español</h4>
+          <p>Edelsa. Легендарна серія від А до Я. Правило ліворуч, вправи праворуч. Найкраща для розуміння логіки мови.</p>
+        </div>
+        <div class="card">
+          <h4>📚 Uso de la gramática española</h4>
+          <p>Francisca Castro. Ідеально для тих, хто любить схеми та практику.</p>
+        </div>
+        <div class="card">
+          <h4>📚 Aula Internacional Plus</h4>
+          <p>Difusión. Найпопулярніший у мовних школах. Орієнтований на розмову та живі ситуації.</p>
+        </div>
+        <div class="card">
+          <h4>📚 Madrigal's Magic Key</h4>
+          <p>Вчить будувати речення через логічні асоціації. Чудовий вибір для англомовців.</p>
+        </div>
+      </div>
+
+      <h3>YouTube-канали</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>📺 Easy Spanish</h4>
+          <p>Вуличні опитування в Іспанії та Латинській Америці. Реальна швидкість мовлення з субтитрами.</p>
+          <a href="https://www.youtube.com/c/EasySpanish" target="_blank" class="card-link">Перейти на канал →</a>
+        </div>
+        <div class="card">
+          <h4>📺 Butterfly Spanish</h4>
+          <p>Харизматична Ана пояснює складну граматику та нюанси вимови просто.</p>
+          <a href="https://www.youtube.com/c/ButterflySpanish" target="_blank" class="card-link">Перейти на канал →</a>
+        </div>
+        <div class="card">
+          <h4>📺 Spanish After Hours</h4>
+          <p>Канал для тих, хто вчить мову через контекст і цікаві історії.</p>
+          <a href="https://www.youtube.com/c/SpanishAfterHours" target="_blank" class="card-link">Перейти на канал →</a>
+        </div>
+        <div class="card">
+          <h4>📺 Español con Juan</h4>
+          <p>Для середнього рівня. Хуан розповідає через метод повторення.</p>
+          <a href="https://www.youtube.com/c/EspanolconJuan" target="_blank" class="card-link">Перейти на канал →</a>
+        </div>
+        <div class="card">
+          <h4>📺 Dreaming Spanish</h4>
+          <p>Метод «зрозумілого входу». Є відео для повних початківців.</p>
+          <a href="https://www.youtube.com/c/DreamingSpanish" target="_blank" class="card-link">Перейти на канал →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="casino-ads">
+      <h3>🎰 GOLDEN FORTUNE CASINO 🎰</h3>
+      <p><strong>FREE SPINS AVAILABLE NOW!</strong> Try your luck today!</p>
+      <p>🌟 Exclusive VIP Rewards 🌟</p>
+      <p>💎 Withdraw Your Winnings Instantly 💎</p>
+      <button class="casino-btn" onclick="openCasinoModal()">JOIN NOW FOR FREE!</button>
+
+      <p style="font-size: 10px; margin-top: 10px;">*Must be 18+ | Play Responsibly</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Easy Spanish. Вивчай іспанську з задоволенням! 🌟</p>
+    </footer>
+  </div>
+
+  <script>
+    // Casino modal
+    function openCasinoModal() {
+      const overlay = document.createElement('div');
+      overlay.id = 'casino-overlay';
+      overlay.style.position = 'fixed';
+      overlay.style.left = '0';
+      overlay.style.top = '0';
+      overlay.style.width = '100%';
+      overlay.style.height = '100%';
+      overlay.style.background = 'rgba(0,0,0,0.55)';
+      overlay.style.zIndex = '9999';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.innerHTML = `
+        <div id="casino-modal" style="background:#ffffff; border-radius:16px; width:min(560px, 94vw); border:1px solid rgba(0,0,0,0.06);">
+
+          <div style="display:flex; justify-content:flex-end; padding:12px;">
+            <button id="casino-modal-close" style="border:0; background:rgba(0,0,0,0.08); backdrop-filter: blur(6px); border-radius:10px; padding:6px 10px; cursor:pointer; font-size:14px; color:#333;">✕</button>
+          </div>
+          <div style="padding:0 0 16px;">
+            <div style="padding:10px; border-radius:16px; background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.86)); box-shadow:0 20px 60px rgba(0,0,0,0.25);">
+              ${getCasinoWidgetHTML()}
+            </div>
+          </div>
+
+        </div>
+      `;
+
+      document.body.appendChild(overlay);
+
+      const closeBtn = overlay.querySelector('#casino-modal-close');
+      const close = () => {
+        overlay.remove();
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) close();
+      });
+
+      // Inject scripts after widget HTML
+      injectCasinoScripts();
+    }
+
+    function getCasinoWidgetHTML() {
+      return `
+        <div class="wrap" style="background:#ffffff; display:flex; justify-content:center; align-items:center; min-height:unset; padding:0;">
+          <div>
+            <style>
+              /* scoped casino styles */
+              #casino-modal .wrap { display:flex; flex-direction:column; align-items:center; padding:0 0 2rem; gap:1.5rem; }
+              #casino-modal * { box-sizing:border-box; margin:0; padding:0; }
+              #casino-modal .credits-bar { display:flex; gap:24px; }
+              #casino-modal .cred-card { background:#2C2C2A; border-radius:8px; padding:10px 20px; text-align:center; }
+              #casino-modal .cred-label { font-size:12px; color:#888780; margin:0 0 2px; }
+              #casino-modal .cred-val { font-size:22px; font-weight:500; color:#D3D1C7; margin:0; }
+              #casino-modal .reels-row { display:flex; gap:10px; justify-content:center; }
+              #casino-modal .reels-row { display: none !important; }
+              #casino-modal .reel { width:78px; height:78px; background:#2C2C2A; border:0.5px solid #5F5E5A; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:40px; }
+              #casino-modal .reel.spin { animation:rsp 0.09s infinite; }
+              @keyframes rsp { 0%{transform:translateY(-4px)} 50%{transform:translateY(4px)} 100%{transform:translateY(-4px)} }
+              #casino-modal .msg-box { min-height:26px; font-size:15px; font-weight:500; color:#D3D1C7; text-align:center; }
+              #casino-modal .msg-box.win { color:#1D9E75; }
+              #casino-modal .msg-box.lose { color:#D85A30; }
+              #casino-modal .spin-btn { padding:10px 22px; font-size:14px; border:0.5px solid #5F5E5A; border-radius:8px; background:transparent; color:#D3D1C7; cursor:pointer; transition:background 0.15s, transform 0.1s; }
+              #casino-modal .spin-btn:hover:not(:disabled) { background:#2C2C2A; }
+              #casino-modal .spin-btn:active:not(:disabled) { transform:scale(0.97); }
+              #casino-modal .spin-btn:disabled { opacity:0.4; cursor:default; }
+              #casino-modal .hist { font-size:12px; color:#5F5E5A; }
+              #casino-modal #lever-group { cursor:pointer; transition:transform 0.25s cubic-bezier(.4,1.6,.6,1); transform-origin:281px 170px; }
+              #casino-modal #lever-group:hover #svg-knob { fill:#EF9F27; }
+              #casino-modal #lever-group.pulled { transform:rotate(38deg); transform-origin:281px 170px; }
+              #casino-modal #lever-group.pulled #svg-knob { fill:#D85A30; }
+            </style>
+
+            <svg width="320" height="340" viewBox="0 0 320 340">
+              <rect x="30" y="10" width="260" height="310" rx="18" fill="#2C2C2A" stroke="#444441" stroke-width="1.5"/>
+              <rect x="44" y="24" width="232" height="270" rx="12" fill="#3C3489" stroke="#534AB7" stroke-width="1"/>
+              <rect x="55" y="34" width="210" height="36" rx="8" fill="#26215C"/>
+              <text x="160" y="57" text-anchor="middle" font-size="15" font-weight="500" fill="#CECBF6" font-family="sans-serif">🎰 УДАЧА™</text>
+              <rect x="60" y="82" width="200" height="100" rx="8" fill="#1a1a18" stroke="#5F5E5A" stroke-width="0.5"/>
+              <rect x="68" y="90" width="52" height="84" rx="6" fill="#26215C" stroke="#7F77DD" stroke-width="0.5"/>
+              <rect x="134" y="90" width="52" height="84" rx="6" fill="#26215C" stroke="#7F77DD" stroke-width="0.5"/>
+              <rect x="200" y="90" width="52" height="84" rx="6" fill="#26215C" stroke="#7F77DD" stroke-width="0.5"/>
+              <text id="svg-r0" x="94" y="140" text-anchor="middle" font-size="38">🍒</text>
+              <text id="svg-r1" x="160" y="140" text-anchor="middle" font-size="38">🍋</text>
+              <text id="svg-r2" x="226" y="140" text-anchor="middle" font-size="38">⭐</text>
+              <line x1="60" y1="132" x2="260" y2="132" stroke="#EF9F27" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+              <rect x="80" y="196" width="160" height="28" rx="6" fill="#085041" stroke="#1D9E75" stroke-width="0.5"/>
+              <text id="svg-msg" x="160" y="215" text-anchor="middle" font-size="12" fill="#9FE1CB" font-family="sans-serif">Натисніть важіль →</text>
+              <rect x="100" y="238" width="120" height="22" rx="4" fill="#26215C" stroke="#534AB7" stroke-width="0.5"/>
+              <text x="160" y="253" text-anchor="middle" font-size="11" fill="#AFA9EC" font-family="sans-serif">Кредити: <tspan id="svg-cred" font-weight="500" fill="#CECBF6">10</tspan></text>
+              <rect x="80" y="270" width="50" height="14" rx="3" fill="#3C3489"/>
+              <rect x="140" y="270" width="40" height="14" rx="3" fill="#3C3489"/>
+              <rect x="190" y="270" width="50" height="14" rx="3" fill="#3C3489"/>
+              <circle cx="160" cy="298" r="16" fill="#993C1D" stroke="#D85A30" stroke-width="1"/>
+              <text x="160" y="303" text-anchor="middle" font-size="13" fill="#F5C4B3" font-family="sans-serif">OK</text>
+              <rect x="22" y="240" width="12" height="50" rx="6" fill="#444441"/>
+              <rect x="286" y="240" width="12" height="50" rx="6" fill="#444441"/>
+              <g id="lever-group" onclick="leverClick()">
+                <rect x="276" y="170" width="10" height="90" rx="5" fill="#5F5E5A" stroke="#444441" stroke-width="0.5"/>
+                <circle id="svg-knob" cx="281" cy="170" r="13" fill="#BA7517" stroke="#EF9F27" stroke-width="1.5"/>
+                <text x="281" y="175" text-anchor="middle" font-size="11" fill="#412402" font-family="sans-serif" pointer-events="none">◉</text>
+                <text x="281" y="275" text-anchor="middle" font-size="9" fill="#888780" font-family="sans-serif" pointer-events="none">▼</text>
+              </g>
+              <ellipse cx="160" cy="322" rx="80" ry="10" fill="#1a1a18" opacity="0.4"/>
+            </svg>
+
+            <div class="credits-bar">
+              <div class="cred-card"><p class="cred-label">Кредити</p><p class="cred-val" id="cred-disp">10</p></div>
+              <div class="cred-card"><p class="cred-label">Перемоги</p><p class="cred-val" id="win-disp">0</p></div>
+              <div class="cred-card"><p class="cred-label">Програші</p><p class="cred-val" id="lose-disp">0</p></div>
+            </div>
+            <div class="reels-row">
+              <div class="reel" id="r0">🍒</div>
+              <div class="reel" id="r1">🍋</div>
+              <div class="reel" id="r2">⭐</div>
+            </div>
+
+
+            <div class="msg-box" id="msg">Натисніть важіль або кнопку!</div>
+            <button class="spin-btn" id="btn" onclick="spin()">🕹️ Крутити (−1 кредит)</button>
+            <div class="hist" id="hist"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    function injectCasinoScripts() {
+      // expose functions to inline onclick handlers in widget
+      window.leverClick = function leverClick() {
+        if(window._casinoSpinning || window._casinoCred < 1) return;
+        const lg = document.getElementById('lever-group');
+        if(lg) lg.classList.add('pulled');
+        setTimeout(()=>{
+          if(lg) lg.classList.remove('pulled');
+          window.spin();
+        },350);
+      };
+
+      window.spin = function spin(){
+        if(window._casinoSpinning || window._casinoCred < 1) return;
+        window._casinoSpinning = true;
+        window._casinoCred--;
+        const credDisp=document.getElementById('cred-disp');
+        const svgCred=document.getElementById('svg-cred');
+        if(credDisp) credDisp.textContent=window._casinoCred;
+        if(svgCred) svgCred.textContent=window._casinoCred;
+        const btn=document.getElementById('btn');
+        if(btn) btn.disabled=true;
+
+        const msg=document.getElementById('msg');
+        if(msg){ msg.className='msg-box'; msg.textContent='...'; }
+        setSvgMsg('Крутимо...','#FAC775');
+
+        const reels=[0,1,2].map(i=>document.getElementById('r'+i));
+        const svgReels=[0,1,2].map(i=>document.getElementById('svg-r'+i));
+        reels.forEach(r=>r && r.classList.add('spin'));
+
+        const reelsIntervals = reels.map((_,i)=>setInterval(()=>{
+          const s = window._casinoPick();
+          if(reels[i]) reels[i].textContent=s;
+          if(svgReels[i]) svgReels[i].textContent=s;
+        },70));
+
+        reels.forEach((_,i)=>{
+          setTimeout(()=>{
+            clearInterval(reelsIntervals[i]);
+            const s = window._casinoPick();
+            if(reels[i]) reels[i].textContent=s;
+            if(svgReels[i]) svgReels[i].textContent=s;
+            if(reels[i]) reels[i].classList.remove('spin');
+            if(i===2) setTimeout(()=>window._casinoFinish([reels[0].textContent, reels[1].textContent, reels[2].textContent]),200);
+          },600+i*420);
+        });
+      };
+
+      // game state + helpers
+      window._casinoSYM=['🍒','🍋','🍊','⭐','💎','🔔','🍇','🍀'];
+      window._casinoWT=[30,25,20,12,3,5,3,2];
+      window._casinoPAY={'🍒🍒🍒':3,'🍋🍋🍋':4,'🍊🍊🍊':5,'⭐⭐⭐':10,'🔔🔔🔔':8,'🍇🍇🍇':7,'🍀🍀🍀':15,'💎💎💎':50};
+      window._casinoTAUNT=['Майже! (зовсім ні)','Казино дякує за гроші!','Може наступного разу...','Карма не на вашому боці','Ще раз, ще раз! 😈','Це не баг — це фіча.','РНГ вас ненавидить.','Спробуйте ще. Будь ласка 🙏'];
+
+      window._casinoCred=10;
+      window._casinoWins=0;
+      window._casinoLosses=0;
+      window._casinoSpinning=false;
+
+      window._casinoPick=function pick(){
+        const t = window._casinoWT.reduce((a,b)=>a+b,0);
+        let r = Math.random()*t;
+        for(let i=0;i<window._casinoSYM.length;i++){
+          r -= window._casinoWT[i];
+          if(r<=0) return window._casinoSYM[i];
+        }
+        return window._casinoSYM[0];
+      };
+
+      window._casinoFinish=function finish(res){
+        const key=res.join('');
+        const payout = window._casinoPAY[key] || 0;
+        const msg=document.getElementById('msg');
+        if(payout>0){
+          window._casinoCred += payout;
+          window._casinoWins++;
+          const txt = payout>=50
+            ? '💎 ДЖЕКПОТ!! +' + payout + ' кредитів!'
+            : payout>=10
+              ? '🎉 Велика перемога! +' + payout + '!'
+              : '✅ Перемога! +' + payout + ' кредитів';
+          if(msg){ msg.textContent=txt; msg.className='msg-box win'; }
+          setSvgMsg('ПЕРЕМОГА! +' + payout,'#5DCAA5');
+        } else {
+          window._casinoLosses++;
+          if(msg){
+            msg.textContent = window._casinoTAUNT[Math.floor(Math.random()*window._casinoTAUNT.length)];
+            msg.className='msg-box lose';
+          }
+          setSvgMsg('Програш :(','#F09595');
+        }
+
+        const credDisp=document.getElementById('cred-disp');
+        const svgCred=document.getElementById('svg-cred');
+        const winDisp=document.getElementById('win-disp');
+        const loseDisp=document.getElementById('lose-disp');
+        const hist=document.getElementById('hist');
+        if(credDisp) credDisp.textContent=window._casinoCred;
+        if(svgCred) svgCred.textContent=window._casinoCred;
+        if(winDisp) winDisp.textContent=window._casinoWins;
+        if(loseDisp) loseDisp.textContent=window._casinoLosses;
+        if(hist) hist.textContent='Разом спінів: ' + (window._casinoWins+window._casinoLosses);
+
+        const btn=document.getElementById('btn');
+        window._casinoSpinning=false;
+
+        if(window._casinoCred===0){
+          if(btn){
+            btn.textContent='Немає кредитів — поповнити?';
+            btn.disabled=false;
+            btn.onclick=()=>{
+              window._casinoCred=10;
+              if(credDisp) credDisp.textContent=10;
+              if(svgCred) svgCred.textContent=10;
+              if(msg){ msg.textContent='Отримали 10 кредитів. Це пастка.'; msg.className='msg-box'; }
+              setSvgMsg('Натисніть важіль →','#9FE1CB');
+              btn.textContent='🕹️ Крутити (−1 кредит)';
+              btn.onclick=window.spin;
+              window._casinoSpinning=false;
+            };
+          }
+        } else {
+          if(btn) btn.disabled=false;
+          window._casinoSpinning=false;
+        }
+      };
+
+      window._casinoSetSvgMsg=function(txt,col){
+        const el=document.getElementById('svg-msg');
+        if(el){ el.textContent=txt; el.setAttribute('fill',col||'#9FE1CB'); }
+      };
+
+      // alias for internal use in this injected scope
+      window.setSvgMsg = window._casinoSetSvgMsg;
+    }
+
+    function setSvgMsg(txt,col){
+      // fallback if injectCasinoScripts didn't set it
+      const el=document.getElementById('svg-msg');
+      if(el){ el.textContent=txt; el.setAttribute('fill',col||'#9FE1CB'); }
+    }
+
+    function openTab(tabName) {
+
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.remove('active'));
+      
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      document.getElementById(tabName).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
